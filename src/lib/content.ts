@@ -1489,8 +1489,8 @@ export const TIMELINE: TimelineMilestone[] = [
     sector: 'Fintech Unicorn & Banking Technology',
     description: 'HR Partner for Zeta Hyderabad—scaled the center to a 500+ employee technology hub and advised executive leadership across Engineering, Product, UX, Cloud, SRE, Data Science, and GTM.',
     achievements: [
-      'HR Partner for Zeta Hyderabad; scaled the tech hub to 500+ employees across Cloud, SRE, and Data Science.',
-      'Partnered with Finance and C-suite on product-wise workforce budgets (₹140 Cr) and predictive workforce health analytics.',
+      'Founding HR partner for Zeta Hyderabad; scaled the tech hub from greenfield to 500+ employees across Cloud, SRE, and Data Science.',
+      'Partnered with Finance and executive leadership on strategic product-wise workforce planning, cost analysis, and predictive workforce health analytics.',
       'Facilitated performance calibrations for 500+ employees, differentiated top performers, and established structured succession frameworks.',
       'Honored with the Zeta Outstanding Employee Award (2022–23) for strategic contributions to organizational growth and people strategy.'
     ],

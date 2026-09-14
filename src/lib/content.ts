@@ -1486,24 +1486,24 @@ export const TIMELINE: TimelineMilestone[] = [
     period: '2022 — Present',
     role: 'HR Business Partner',
     organization: 'Zeta',
-    sector: 'Fintech Unicorn & Banking Technology',
-    description: 'HR Partner for Zeta Hyderabad—scaled the center to a 500+ employee technology hub and advised executive leadership across Engineering, Product, UX, Cloud, SRE, Data Science, and GTM.',
+    sector: 'Fintech & Banking Technology',
+    description: 'HR Business Partner advising executive leadership across Engineering, Product, UX, Cloud, SRE, Data Science, and GTM.',
     achievements: [
-      'Founding HR partner for Zeta Hyderabad; scaled the tech hub from greenfield to 500+ employees across Cloud, SRE, and Data Science.',
+      'Partnered with technology leadership across Cloud, SRE, and Data Science to establish competency frameworks, governance, and career architecture.',
       'Partnered with Finance and executive leadership on strategic product-wise workforce planning, cost analysis, and predictive workforce health analytics.',
-      'Facilitated performance calibrations for 500+ employees, differentiated top performers, and established structured succession frameworks.',
+      'Facilitated leadership performance calibrations, differentiated top performers, and established structured succession frameworks.',
       'Honored with the Zeta Outstanding Employee Award (2022–23) for strategic contributions to organizational growth and people strategy.'
     ],
-    decisionInsight: "Observed how fast-scaling tech companies accumulate 'decision debt'—rapid approvals and informal exceptions granted during hypergrowth become unexamined institutional assumptions that burden later operating efficiency."
+    decisionInsight: "Observed how technology organizations accumulate 'decision debt'—rapid approvals and informal exceptions become unexamined institutional assumptions that burden operating efficiency."
   },
   {
     period: '2015 — 2022',
     role: 'Lead HR Business Partner / Talent & Org Specialist',
     organization: 'Hyundai Mobis R&D Center India',
     sector: 'Automotive R&D & Autonomous Systems',
-    description: 'Scaled specialized R&D capability centers from early incubation to hundreds of specialized automotive software engineers (ADAS, chassis control, software-defined vehicle platforms).',
+    description: 'Supported specialized R&D capability centers across automotive software engineering (ADAS, chassis control, software-defined vehicle platforms).',
     achievements: [
-      'Spearheaded hiring and onboarding architecture scaling engineering headcount from 0 to 400+ researchers.',
+      'Spearheaded hiring, onboarding architecture, and talent pipelines for specialized engineering and research domains.',
       'Engineered cross-cultural leadership frameworks connecting headquarters governance with local R&D velocity.',
       'Implemented enterprise HRIS modernization and structured compensation benchmarking frameworks.'
     ],

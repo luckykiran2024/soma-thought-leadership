@@ -19,7 +19,7 @@ export default function ExperiencePage() {
     'Employee Listening Systems',
     'People Analytics & Predictive Modeling',
     'Organizational Change Governance',
-    'Building & Scaling Tech Orgs (0 to 400+)',
+    'Technology Organization Design & Architecture',
     'Engineering & Product Leadership Alignment',
     'HR SaaS & Digital Transformation',
     'Decision Management Architecture',
@@ -43,7 +43,7 @@ export default function ExperiencePage() {
             This is not an academic exercise in management theory. Over the past 11+ years, I have worked inside high-velocity engineering, fintech unicorn, and automotive R&D environments—partnering directly with Vice Presidents of Engineering, Product Directors, and technical founders.
           </p>
           <p>
-            I have been inside the rooms where critical decisions are debated: re-architecting engineering pods, negotiating non-standard compensation exceptions for scarce AI talent, scaling research centers from zero to over 400 researchers, calibrating performance across distributed teams, and managing cross-cultural leadership friction.
+            I have been inside the rooms where critical decisions are debated: re-architecting engineering pods, negotiating non-standard compensation exceptions for scarce AI talent, establishing specialized engineering and research centers, calibrating performance across distributed teams, and managing cross-cultural leadership alignment.
           </p>
           <p>
             Working at this operational ground level revealed a persistent structural flaw: organizations have robust software to account for transactions, but almost zero infrastructure to preserve the judgment and reasoning behind consequential decisions.

@@ -14,7 +14,8 @@ import {
   Shield,
   Clock,
   Compass,
-  FileText
+  FileText,
+  ExternalLink
 } from 'lucide-react';
 import FourRDiagram from '@/components/frameworks/FourRDiagram';
 import StepFrameworkDiagram from '@/components/frameworks/StepFrameworkDiagram';
@@ -292,6 +293,16 @@ export default function HomePage() {
               </div>
 
               <div className="pt-2 flex flex-wrap items-center gap-3">
+                <a
+                  href="https://amzn.in/d/0eymRvyu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-5 py-2.5 rounded-full bg-accent hover:bg-accent-hover text-white text-xs font-semibold transition-all shadow-sm"
+                >
+                  <span>Kindle Edition on Amazon</span>
+                  <ExternalLink className="w-3.5 h-3.5 ml-1.5" />
+                </a>
+
                 <Link
                   href="/book"
                   className="inline-flex items-center px-5 py-2.5 rounded-full bg-navy-950 hover:bg-navy-900 text-white text-xs font-semibold transition-all shadow-sm"

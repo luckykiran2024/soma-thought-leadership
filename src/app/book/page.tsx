@@ -32,7 +32,7 @@ export default function BookPage() {
           <div className="lg:col-span-7 space-y-6">
             <div className="inline-flex items-center space-x-2 text-xs font-mono uppercase tracking-widest text-accent font-semibold">
               <BookOpen className="w-3.5 h-3.5" />
-              <span>Forthcoming Publication</span>
+              <span>Available on Kindle</span>
             </div>
 
             <div className="space-y-3">
@@ -57,6 +57,16 @@ export default function BookPage() {
             </div>
 
             <div className="pt-2 flex flex-wrap items-center gap-3">
+              <a
+                href="https://amzn.in/d/0eymRvyu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-3 rounded-full bg-accent hover:bg-accent-hover text-white text-xs font-semibold transition-all shadow-md group"
+              >
+                <span>Kindle Edition on Amazon</span>
+                <ExternalLink className="w-3.5 h-3.5 ml-1.5 opacity-90 group-hover:translate-x-0.5 transition-transform" />
+              </a>
+
               <a
                 href="#excerpts"
                 className="inline-flex items-center px-6 py-3 rounded-full bg-navy-950 hover:bg-navy-900 text-white text-xs font-semibold transition-all shadow-sm"
@@ -97,7 +107,7 @@ export default function BookPage() {
                   </p>
                 </div>
 
-                <div className="pt-8 space-y-2">
+                <div className="pt-8 space-y-3">
                   <div className="p-3 bg-white rounded border border-editorial-border text-left text-xs space-y-1">
                     <span className="font-mono text-[10px] uppercase text-navy-800 font-semibold block">
                       Core Framework Inside
@@ -106,6 +116,14 @@ export default function BookPage() {
                       The 4R Operational Cycle: Record · Retrieve · Rely · Reuse
                     </p>
                   </div>
+                  <a
+                    href="https://amzn.in/d/0eymRvyu"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block w-full py-2.5 px-4 bg-navy-950 hover:bg-navy-900 text-white rounded-lg text-xs font-semibold transition-all text-center shadow-sm"
+                  >
+                    <span>Read on Kindle · Amazon ↗</span>
+                  </a>
                 </div>
 
                 <div className="text-[10px] font-mono text-ink-muted tracking-widest uppercase">
@@ -226,10 +244,18 @@ export default function BookPage() {
 
             {/* Channels badges */}
             <div className="pt-2 flex flex-wrap gap-2 text-xs font-mono text-ink-muted">
-              <span className="px-3 py-1 rounded bg-surface border border-editorial-border">Kindle Edition</span>
-              <span className="px-3 py-1 rounded bg-surface border border-editorial-border">Hardcover / Paperback</span>
-              <span className="px-3 py-1 rounded bg-surface border border-editorial-border">Amazon Worldwide</span>
-              <span className="px-3 py-1 rounded bg-surface border border-editorial-border">Publisher Inquiries</span>
+              <a
+                href="https://amzn.in/d/0eymRvyu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-3.5 py-1.5 rounded bg-amber-50 border border-amber-200 text-amber-900 font-semibold inline-flex items-center space-x-1.5 hover:bg-amber-100 transition-colors"
+              >
+                <span>Kindle Edition Available</span>
+                <ExternalLink className="w-3 h-3 text-amber-700" />
+              </a>
+              <span className="px-3.5 py-1.5 rounded bg-surface border border-editorial-border">Hardcover / Paperback</span>
+              <span className="px-3.5 py-1.5 rounded bg-surface border border-editorial-border">Amazon Worldwide</span>
+              <span className="px-3.5 py-1.5 rounded bg-surface border border-editorial-border">Publisher Inquiries</span>
             </div>
           </div>
 

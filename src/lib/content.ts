@@ -1498,7 +1498,7 @@ export const TIMELINE: TimelineMilestone[] = [
   },
   {
     period: '2015 — 2022',
-    role: 'Lead HR Business Partner / Talent & Org Specialist',
+    role: 'Assistant Manager HR / Talent & Org Specialist',
     organization: 'Hyundai Mobis R&D Center India',
     sector: 'Automotive R&D & Autonomous Systems',
     description: 'Supported specialized R&D capability centers across automotive software engineering (ADAS, chassis control, software-defined vehicle platforms).',

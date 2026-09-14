@@ -617,7 +617,7 @@ export default function HomePage() {
             </span>
           </h2>
           <p className="text-sm text-ink-muted max-w-lg mx-auto">
-            Interested in SigmaGo, the book, decision intelligence, or simply exchanging ideas around modern organizations?
+            The reason I developed this website is to expand my network. I would love to converse with founders, CHROs, and builders exploring organizational memory, decision intelligence, or modern people strategy.
           </p>
         </div>
 

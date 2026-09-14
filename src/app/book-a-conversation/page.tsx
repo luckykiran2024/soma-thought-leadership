@@ -36,7 +36,7 @@ export default function BookConversationPage() {
           Some ideas are better explored through conversation.
         </p>
         <p className="text-base text-ink-light leading-relaxed font-light">
-          Whether you would like to discuss SigmaGo, decision intelligence, organizational challenges, my book, research, publishing, or simply exchange perspectives, you can schedule a conversation directly.
+          The main purpose of this platform is to grow my network. I would love to converse with founders, CHROs, engineering leaders, and practitioners navigating scale, organizational design, decision memory, or simply looking to exchange ideas.
         </p>
       </div>
 

@@ -212,10 +212,10 @@ export default function AboutPage() {
       <section className="bg-white border border-editorial-border rounded-2xl p-8 sm:p-12 flex flex-col md:flex-row items-center justify-between gap-8">
         <div className="space-y-2 max-w-xl">
           <h3 className="font-serif text-2xl sm:text-3xl text-ink font-normal">
-            Open for Thought Leadership & Conversations
+            Open for Conversations & Networking
           </h3>
           <p className="text-sm text-ink-light font-light leading-relaxed">
-            I regularly converse with founders, CHROs, engineering leaders, publishers, and podcast hosts on the evolution of organizational memory and decision governance.
+            The main reason I developed this platform is to expand my professional network. I would love to converse with founders, CHROs, engineering leaders, and fellow practitioners on organizational scale, decision governance, and the future of people systems.
           </p>
         </div>
 

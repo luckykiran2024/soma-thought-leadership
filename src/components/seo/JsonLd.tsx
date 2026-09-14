@@ -21,7 +21,7 @@ export default function JsonLd({ type, data = {} }: JsonLdProps) {
       telephone: '+91 93815 48500',
       url: 'https://somakirangonella.com',
       sameAs: [
-        'https://www.linkedin.com',
+        'https://www.linkedin.com/in/soma-kiran-gonella-a9160626/',
       ],
       knowsAbout: [
         'Organizational Decision Intelligence',

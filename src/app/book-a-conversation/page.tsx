@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Calendar, Clock, ArrowRight, ExternalLink, Shield, CheckCircle2, User, Sparkles, BookOpen, Compass } from 'lucide-react';
+import { Calendar, Clock, ArrowRight, ExternalLink, Shield, CheckCircle2, User, Sparkles, BookOpen, Compass, Mail } from 'lucide-react';
 import { APPOINTMENT_TYPES } from '@/lib/content';
 
 export default function BookConversationPage() {
@@ -12,7 +12,7 @@ export default function BookConversationPage() {
   // Read environment variable or fallback to Google Calendar appointment scheduling link
   const defaultBookingUrl =
     process.env.NEXT_PUBLIC_GOOGLE_BOOKING_URL ||
-    'https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0AAAAAAAAAAAAAA';
+    'https://calendar.google.com/calendar/render?action=TEMPLATE&text=Conversation+with+Soma+Kiran+Gonella&add=soma.kiran20@gmail.com';
 
   const currentAppointment = APPOINTMENT_TYPES.find((a) => a.id === selectedType) || APPOINTMENT_TYPES[0];
 
@@ -127,14 +127,21 @@ export default function BookConversationPage() {
             </h2>
           </div>
 
-          <div className="flex items-center space-x-3">
+          <div className="flex flex-wrap items-center gap-3">
             <button
               onClick={handleOpenGoogleBooking}
               className="px-6 py-3 rounded-full bg-navy-950 hover:bg-navy-900 text-white text-xs font-semibold transition-all shadow-sm flex items-center space-x-2 group"
             >
-              <span>Choose a Time on Google Calendar</span>
+              <span>Schedule on Google Calendar</span>
               <ExternalLink className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
             </button>
+            <a
+              href="mailto:soma.kiran20@gmail.com?subject=Schedule%20a%20Conversation%20with%20Soma%20Kiran%20Gonella"
+              className="px-5 py-3 rounded-full border border-editorial-border bg-white hover:bg-surface text-ink text-xs font-semibold transition-colors flex items-center space-x-1.5 shadow-xs"
+            >
+              <Mail className="w-3.5 h-3.5 text-accent" />
+              <span>Email Directly</span>
+            </a>
           </div>
         </div>
 

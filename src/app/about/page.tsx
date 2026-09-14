@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Metadata } from 'next';
-import { ArrowRight, User, Briefcase, BookOpen, Sparkles, Mail, Phone, Calendar } from 'lucide-react';
+import { ArrowRight, User, Briefcase, BookOpen, Sparkles, Mail, Phone, Calendar, Linkedin } from 'lucide-react';
 import JsonLd from '@/components/seo/JsonLd';
 
 export const metadata: Metadata = {
@@ -54,6 +54,15 @@ export default function AboutPage() {
               >
                 <Phone className="w-3.5 h-3.5 mr-2 text-emerald-600" />
                 <span>+91 93815 48500</span>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/soma-kiran-gonella-a9160626/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center hover:text-ink transition-colors"
+              >
+                <Linkedin className="w-3.5 h-3.5 mr-2 text-[#0A66C2]" />
+                <span>LinkedIn Profile</span>
               </a>
             </div>
 

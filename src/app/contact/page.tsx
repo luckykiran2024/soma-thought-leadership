@@ -130,10 +130,10 @@ export default function ContactPage() {
               </a>
 
               <a
-                href="https://www.linkedin.com"
+                href="https://www.linkedin.com/in/soma-kiran-gonella-a9160626/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-start p-3 rounded-lg border border-editorial-border bg-surface hover:bg-white transition-all group"
+                className="flex items-start p-4 rounded-xl border border-editorial-border bg-white hover:bg-surface transition-all group"
               >
                 <Linkedin className="w-4 h-4 text-[#0A66C2] mr-3 mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform" />
                 <div>

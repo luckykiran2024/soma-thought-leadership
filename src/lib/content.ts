@@ -210,6 +210,104 @@ Why? Because the model has zero access to:
     },
     relationshipToSigmaGo: 'SigmaGo combines graph-based decision models with proprietary telemetry (Impact Factor, Deviation Factor, Confidence Factor) to provide organizations with actionable, context-aware decision intelligence.',
     relatedSlugs: ['step-framework', 'four-r-framework', 'institutional-judgment']
+  },
+  {
+    slug: 'decision-management',
+    title: 'Decision Management: Turning Judgment, Exceptions and Approvals into Institutional Capital',
+    shortTitle: 'Decision Management',
+    tagline: 'Codifying organizational judgment beyond transactions',
+    category: 'Decision Architecture',
+    proposition: 'Organizations spend millions optimizing business workflows and accounting for capital, but lack a systematic management discipline to govern, track, and compound their decisions.',
+    explanation: `For generations, business architecture has focused on processes: BPMN diagrams, standard operating procedures, and automated workflows. But workflows are merely the rails along which work travels. Decisions are the steering wheel.
+
+When an executive grants an exception, an architect chooses a database, or a hiring manager approves a compensation bump, they are making a commitment of organizational capital. Traditional management software records the transaction (the purchase order was cut, the candidate was hired), but loses the reasoning entirely.
+
+Decision Management treats every high-stakes judgment as an institutional asset:
+- **Decision Taxonomy**: Classifying choices by impact, irreversibility, and policy dependency.
+- **Context Preservation**: Recording the hypothesis, constraints, and discarded alternatives at the exact point of commitment.
+- **Precedent Calibration**: Tracking realized outcomes to measure whether past reasoning proved reliable or flawed.`,
+    diagramType: 'flow',
+    practicalExample: {
+      context: 'A fast-growing enterprise faces rapid leadership turnover across its product and engineering divisions.',
+      conventionalApproach: 'Decisions are approved in closed executive syncs. New leaders spend six months conducting forensic interviews to understand why legacy systems and policies exist.',
+      decisionIntelligenceApproach: 'Every key architectural and organizational approval is cataloged with problem frame, stakeholders, trade-offs, and expected validation horizon.',
+      outcome: 'Executive onboarding time drops by 65%, and the company stops reversing strategy based on incomplete institutional memory.'
+    },
+    relationshipToSigmaGo: 'SigmaGo serves as the core operational platform for Decision Management, connecting policy definitions to real-time frontline decisions.',
+    relatedSlugs: ['organizational-memory', 'decision-intelligence', 'four-r-framework']
+  },
+  {
+    slug: 'organizational-memory',
+    title: 'Organizational Memory: Why Companies Remember Assets and Suffer Amnesia Around Reasoning',
+    shortTitle: 'Organizational Memory',
+    tagline: 'The institutional cortex behind sustainable corporate strategy',
+    category: 'Institutional Intelligence',
+    proposition: 'Corporate memory is not a document drive full of PDFs. It is the ability of an enterprise to walk up to a historical choice and retrieve the exact reasoning at the moment of need.',
+    explanation: `Every modern enterprise has immaculate records of its assets. A CFO can tell you the depreciation schedule of a laptop purchased six years ago. An HRMS can tell you what day an employee started in 2018.
+
+Yet if you ask why a strategic market initiative was terminated in 2023, or why a critical customer was granted an unprecedented exception, the enterprise is silent.
+
+Memory in corporations lives in the biological brains of human employees. When those employees leave, the memory walks out the front door. What remains are meeting minutes—which record diplomacy rather than truth—and static policy manuals that bear little resemblance to frontline operations.
+
+Building true organizational memory requires an indexed cortex that captures why choices were made and links them directly to the operational systems where work occurs.`,
+    diagramType: 'matrix',
+    practicalExample: {
+      context: 'A company faces a major pricing dispute with a tier-1 customer over legacy multi-year discount terms.',
+      conventionalApproach: 'Account managers search through 4-year-old email threads, unable to explain why a 22% exception was originally granted, resulting in an unjustified price compromise.',
+      decisionIntelligenceApproach: 'The original deal decision record is instantly surfaced: the 22% discount was tied to a beta co-development agreement that terminated 18 months prior.',
+      outcome: 'The sales leadership renegotiates from a position of authority and clarity, protecting margin while preserving customer partnership.'
+    },
+    relationshipToSigmaGo: 'SigmaGo functions as the permanent digital cortex for enterprise memory, guaranteeing that reasoning remains accessible regardless of personnel turnover.',
+    relatedSlugs: ['four-r-framework', 'institutional-judgment', 'organizational-continuity']
+  },
+  {
+    slug: 'decision-intelligence',
+    title: 'Decision Intelligence: What Decisions Collectively Reveal Over Time',
+    shortTitle: 'Decision Intelligence',
+    tagline: 'From isolated approvals to aggregate institutional telemetry',
+    category: 'Decision Telemetry',
+    proposition: 'Organizations make thousands of choices each quarter. Decision Intelligence studies the aggregate patterns across those choices to uncover systemic blind spots, policy drift, and cultural reality.',
+    explanation: `Most executives view decisions as episodic events: an agenda item on Tuesday, an approval clicked on Thursday.
+
+Decision Intelligence shifts the perspective from individual choices to collective telemetry. When you analyze decisions in aggregate, patterns emerge that no single manager could ever see:
+- Which policies generate an 80% exception rate (indicating Policy Drift).
+- Which business units take 3x longer to resolve structural dilemmas.
+- Which leaders consistently approve deviations that result in downstream customer churn.
+
+By measuring telemetry such as Impact Factor, Deviation Factor, and Confidence Factor, Decision Intelligence transforms qualitative leadership intuition into quantitative organizational telemetry.`,
+    diagramType: 'matrix',
+    practicalExample: {
+      context: 'A global engineering organization notices a steady decline in sprint velocity and employee satisfaction scores.',
+      conventionalApproach: 'HR runs engagement surveys and leadership runs agile retrospectives, blaming workload and communication friction.',
+      decisionIntelligenceApproach: 'SigmaGo telemetry reveals that 43% of engineering decisions in the prior two quarters bypassed architecture review as "urgent business exceptions."',
+      outcome: 'Leadership addresses the root cause: sales commitments were bypassing technical gating, causing compounding technical and decision debt.'
+    },
+    relationshipToSigmaGo: 'SigmaGo is built around Decision Intelligence telemetry—converting raw decision histories into actionable organizational insights and policy recommendations.',
+    relatedSlugs: ['step-framework', 'decision-debt', 'ai-and-decision-intelligence']
+  },
+  {
+    slug: 'organizational-continuity',
+    title: 'Organizational Continuity: Building Enterprise Knowledge That Withstands Executive Turnover',
+    shortTitle: 'Organizational Continuity',
+    tagline: 'Decoupling institutional wisdom from human tenure',
+    category: 'Leadership & Systems',
+    proposition: 'A company does not become mature simply by getting older. It achieves continuity only when the reasoning behind its rules and strategies survives the departure of the people who created them.',
+    explanation: `One of the most famous principles in political philosophy is Chesterton’s Fence: do not remove a fence until you understand why it was put up in the first place.
+
+In corporate life, new executives tear down fences every day. They arrive in a new role, observe a rule or approval gate that seems cumbersome, assume their predecessors were incompetent, and abolish it. Six months later, the exact disaster the fence was built to prevent reoccurs.
+
+True organizational continuity requires that the fence and its history travel together. When a leader inspects a rule, the rationale, the incident that provoked it, and the trade-offs accepted must be immediately legible.
+
+Continuity is not conservatism; it is informed evolution.`,
+    diagramType: 'comparison',
+    practicalExample: {
+      context: 'A newly appointed VP of Engineering considers abolishing a seemingly cumbersome dual-approval gate for cloud infrastructure changes.',
+      conventionalApproach: 'Assuming the gate was mere legacy bureaucracy, the new VP removes it; three months later, a catastrophic multi-million-dollar cloud cost runaway occurs.',
+      decisionIntelligenceApproach: 'The VP queries the institutional memory system, which displays the incident report and rationale from 2022 that led to the gate after a major security and spend breach.',
+      outcome: 'Rather than dismantling the safeguard, the VP modernizes it with automated policy controls, preserving the protection without human friction.'
+    },
+    relationshipToSigmaGo: 'SigmaGo provides incoming leaders with the institutional context behind existing boundaries, protecting companies from repeating historical disasters.',
+    relatedSlugs: ['institutional-judgment', 'decision-management', 'organizational-memory']
   }
 ];
 
@@ -1562,34 +1660,34 @@ export const APPOINTMENT_TYPES: AppointmentType[] = [
     title: 'General Conversation',
     duration: '30 minutes',
     badge: 'Ideas & Organizations',
-    description: 'For discussions around organizational dynamics, strategic HR partnering, decision making, or exchanging professional perspectives.',
+    description: 'For discussions around ideas, organizations, HR, decision making or professional networking.',
     intendedFor: 'Leaders, peers, HR practitioners, and curious thinkers.',
     googleBookingParam: 'general-conversation'
   },
   {
     id: 'sigmago',
-    title: 'SigmaGo Pilot Discussion',
+    title: 'SigmaGo Conversation',
     duration: '45 minutes',
     badge: 'Product & Technology',
-    description: 'For organizations, enterprise leaders, prospective pilot partners, and investors interested in exploring SigmaGo for decision intelligence.',
+    description: 'For organizations, leaders, potential customers, partners or investors interested in SigmaGo.',
     intendedFor: 'CHROs, CTOs, Founders, Operations Leaders, and Seed/Angel Investors.',
-    googleBookingParam: 'sigmago-pilot'
+    googleBookingParam: 'sigmago-conversation'
   },
   {
     id: 'publishing',
-    title: 'Book & Publishing Collaboration',
+    title: 'Book / Publishing',
     duration: '30 minutes',
     badge: 'The Other Book',
-    description: 'For publishers, literary agents, editors, reviewers, podcast hosts, and conference organizers exploring The Other Book and keynote topics.',
+    description: 'For publishers, editors, reviewers, podcast hosts and book-related conversations.',
     intendedFor: 'Publishers, editors, podcast hosts, event curators.',
     googleBookingParam: 'publishing-book'
   },
   {
     id: 'research',
-    title: 'Research & Thought Leadership',
+    title: 'Research / Thought Leadership',
     duration: '45 minutes',
     badge: 'Institutional Intelligence',
-    description: 'For academic researchers, management consultants, and institutional thinkers exploring organizational memory, decision debt, and governance.',
+    description: 'For researchers, leaders or practitioners interested in decision intelligence and organizational memory.',
     intendedFor: 'Academics, management researchers, authors, and advisors.',
     googleBookingParam: 'research-collaboration'
   }

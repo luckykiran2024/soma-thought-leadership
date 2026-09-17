@@ -61,7 +61,7 @@ export default function HomePage() {
             </h1>
 
             <p className="text-lg sm:text-xl text-ink-light leading-relaxed max-w-2xl font-light">
-              I am currently invested into how organizations make decisions, preserve their reasoning, learn from exceptions, and turn accumulated judgment into institutional intelligence.
+              I study how organizations make decisions, preserve their reasoning, learn from exceptions, and turn accumulated judgment into institutional intelligence.
             </p>
 
             {/* CTAs */}
@@ -102,49 +102,53 @@ export default function HomePage() {
               The Fundamental Problem
             </span>
             <h2 className="font-serif text-2xl sm:text-3xl font-normal text-ink leading-snug">
-              Every organization creates thousands of decisions every single week.
+              Every organization creates thousands of decisions.
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-ink-light font-serif italic border-y border-editorial-rule py-6">
-            <div className="space-y-1.5">
-              <p>· Some become formal policies.</p>
-              <p>· Some become operational exceptions.</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-ink-light font-serif italic border-y border-editorial-rule py-6">
+            <div className="space-y-2">
+              <p>· Some become policies.</p>
+              <p>· Some become exceptions.</p>
             </div>
-            <div className="space-y-1.5">
-              <p>· Some quietly become unwritten precedents.</p>
-              <p>· Some disappear into the digital ether entirely.</p>
+            <div className="space-y-2">
+              <p>· Some quietly become precedents.</p>
+              <p>· Some disappear entirely.</p>
             </div>
           </div>
 
           <div className="space-y-4">
             <p className="text-sm font-medium text-ink">
-              Most organizations meticulously preserve the outcome. Very few preserve:
+              Most organizations preserve the outcome. Very few preserve:
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-ink-light font-sans">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs text-ink-light font-sans">
               <div className="flex items-center space-x-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" />
-                <span>Why the decision was actually made</span>
+                <span>Why the decision was made</span>
               </div>
               <div className="flex items-center space-x-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" />
-                <span>What real-world conditions existed at the time</span>
+                <span>What conditions existed</span>
               </div>
               <div className="flex items-center space-x-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" />
-                <span>What alternatives and trade-offs were considered</span>
+                <span>What alternatives were considered</span>
               </div>
               <div className="flex items-center space-x-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" />
-                <span>Who interpreted the rule and why</span>
+                <span>Who interpreted the rule</span>
               </div>
               <div className="flex items-center space-x-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" />
-                <span>What exception was allowed and under what constraints</span>
+                <span>What exception was allowed</span>
               </div>
               <div className="flex items-center space-x-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" />
-                <span>Whether the reasoning should ever be reused</span>
+                <span>Whether the decision worked</span>
+              </div>
+              <div className="flex items-center space-x-2 sm:col-span-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" />
+                <span>Whether the same reasoning should be reused</span>
               </div>
             </div>
           </div>
@@ -184,7 +188,7 @@ export default function HomePage() {
             <div className="space-y-4">
               <div className="flex items-center justify-between">
                 <span className="text-xs font-mono font-semibold uppercase tracking-wider text-accent">
-                  Dimension 01 · THINK
+                  THINK
                 </span>
                 <Compass className="w-5 h-5 text-accent" />
               </div>
@@ -192,7 +196,7 @@ export default function HomePage() {
                 Decision Management
               </h3>
               <p className="text-sm text-ink-light leading-relaxed">
-                Researching how organizational judgment, exceptions, approvals, and informal precedents can become structured, reusable institutional intelligence.
+                Researching how organizational judgment, exceptions, approvals and precedents can become reusable intelligence.
               </p>
             </div>
             <div className="pt-6 mt-6 border-t border-editorial-rule">
@@ -211,7 +215,7 @@ export default function HomePage() {
             <div className="space-y-4">
               <div className="flex items-center justify-between">
                 <span className="text-xs font-mono font-semibold uppercase tracking-wider text-navy-800">
-                  Dimension 02 · WRITE
+                  WRITE
                 </span>
                 <BookOpen className="w-5 h-5 text-navy-800" />
               </div>
@@ -219,7 +223,7 @@ export default function HomePage() {
                 The Other Book
               </h3>
               <p className="text-sm text-ink-light leading-relaxed">
-                A forthcoming book exploring something companies create every day but rarely preserve: decisions, trade-offs, and the 4R Framework of organizational memory.
+                A book about something organizations create every day but rarely preserve: decisions and their context.
               </p>
             </div>
             <div className="pt-6 mt-6 border-t border-editorial-rule">
@@ -238,15 +242,15 @@ export default function HomePage() {
             <div className="space-y-4">
               <div className="flex items-center justify-between">
                 <span className="text-xs font-mono font-semibold uppercase tracking-wider text-blue-300">
-                  Dimension 03 · BUILD
+                  BUILD
                 </span>
                 <Sparkles className="w-5 h-5 text-blue-400" />
               </div>
               <h3 className="font-serif text-2xl text-white font-normal">
-                SigmaGo Platform
+                SigmaGo
               </h3>
               <p className="text-sm text-slate-300 leading-relaxed">
-                A decision intelligence platform designed to help organizations record, retrieve, understand, and reuse decision context across structural, transactional, and exceptional boundaries.
+                A decision intelligence platform designed to help organizations record, retrieve, understand and reuse decision context.
               </p>
             </div>
             <div className="pt-6 mt-6 border-t border-navy-800">
@@ -380,16 +384,21 @@ export default function HomePage() {
 
       {/* 5. SIGMAGO PRODUCT SECTION */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-navy-950 text-white border border-navy-800 rounded-2xl p-8 sm:p-12 lg:p-16 space-y-12">
+        <div className="bg-navy-950 text-white border border-navy-800 rounded-2xl p-8 sm:p-12 lg:p-16 space-y-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             <div className="lg:col-span-7 space-y-4">
               <div className="inline-flex items-center space-x-2 text-xs font-mono uppercase tracking-widest text-blue-400">
                 <Sparkles className="w-3.5 h-3.5" />
                 <span>Emerging Technology</span>
               </div>
-              <h2 className="font-serif text-3xl sm:text-5xl text-white font-normal leading-tight">
-                SigmaGo: Decision Intelligence for Organizations
-              </h2>
+              <div className="space-y-1">
+                <h2 className="font-serif text-3xl sm:text-5xl text-white font-normal leading-tight">
+                  SigmaGo
+                </h2>
+                <p className="font-serif text-xl sm:text-2xl text-blue-200 italic font-normal">
+                  Decision Intelligence for Organizations
+                </p>
+              </div>
               <p className="text-base text-slate-300 max-w-2xl font-light leading-relaxed">
                 Organizations already have workflows for making decisions. SigmaGo is being designed to help them understand what those decisions collectively reveal.
               </p>
@@ -400,7 +409,7 @@ export default function HomePage() {
                 href="/sigmago"
                 className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold transition-all shadow-sm"
               >
-                <span>Explore SigmaGo Architecture</span>
+                <span>Explore SigmaGo</span>
                 <ArrowRight className="w-3.5 h-3.5 ml-1.5" />
               </Link>
               <Link
@@ -412,44 +421,125 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Decision Telemetry Concepts Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-6 border-t border-navy-800">
-            <div className="bg-navy-900/60 p-4 rounded-lg border border-navy-800/80 space-y-1">
-              <span className="text-[11px] font-mono text-blue-400 uppercase tracking-wider block">
-                Impact Factor
-              </span>
-              <p className="text-xs text-slate-300">
-                Quantifies organizational blast radius across headcount, capital, and risk.
-              </p>
+          {/* Decision Relationship Pipeline */}
+          <div className="pt-6 border-t border-navy-800/80 space-y-3">
+            <span className="text-xs font-mono uppercase tracking-wider text-slate-400 block">
+              Capturing the Relationship Between
+            </span>
+            <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-2 text-center text-xs font-mono">
+              {['Policy', 'Process', 'Approval', 'Exception', 'Reasoning', 'Outcome', 'Precedent'].map((step, idx) => (
+                <div
+                  key={step}
+                  className="p-3 bg-navy-900/80 border border-navy-800 rounded-lg flex flex-col justify-center items-center"
+                >
+                  <span className="text-[10px] text-blue-400 font-semibold mb-1">0{idx + 1}</span>
+                  <span className="text-white font-sans font-medium">{step}</span>
+                </div>
+              ))}
             </div>
-            <div className="bg-navy-900/60 p-4 rounded-lg border border-navy-800/80 space-y-1">
-              <span className="text-[11px] font-mono text-amber-400 uppercase tracking-wider block">
-                Deviation Factor
-              </span>
-              <p className="text-xs text-slate-300">
-                Measures how far an exceptional approval steps outside established policy.
-              </p>
+            <p className="text-xs text-slate-400 italic pt-1 text-center sm:text-left">
+              Then turns that decision history into organizational intelligence.
+            </p>
+          </div>
+
+          {/* STEP Framework Narrative Explanation */}
+          <div className="p-6 sm:p-8 bg-navy-900/50 rounded-xl border border-navy-800 space-y-4">
+            <span className="text-xs font-mono uppercase tracking-wider text-blue-300 font-semibold block">
+              The STEP Framework: Decision Roles
+            </span>
+            <p className="text-sm text-slate-300 font-light leading-relaxed">
+              Different organizational decisions have different roles:
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+              <div className="p-3.5 bg-navy-950 rounded-lg border border-navy-800 space-y-1">
+                <strong className="text-white block font-sans text-sm font-medium">Structural</strong>
+                <p className="text-slate-400">A structural decision establishes boundaries.</p>
+              </div>
+              <div className="p-3.5 bg-navy-950 rounded-lg border border-navy-800 space-y-1">
+                <strong className="text-white block font-sans text-sm font-medium">Process</strong>
+                <p className="text-slate-400">A process decision defines how those boundaries operate.</p>
+              </div>
+              <div className="p-3.5 bg-navy-950 rounded-lg border border-navy-800 space-y-1">
+                <strong className="text-white block font-sans text-sm font-medium">Transactional</strong>
+                <p className="text-slate-400">A transactional decision applies them.</p>
+              </div>
+              <div className="p-3.5 bg-navy-950 rounded-lg border border-navy-800 space-y-1">
+                <strong className="text-white block font-sans text-sm font-medium">Exceptional</strong>
+                <p className="text-slate-400">An exceptional decision bends or crosses them.</p>
+              </div>
             </div>
-            <div className="bg-navy-900/60 p-4 rounded-lg border border-navy-800/80 space-y-1">
-              <span className="text-[11px] font-mono text-emerald-400 uppercase tracking-wider block">
-                Confidence Factor
-              </span>
-              <p className="text-xs text-slate-300">
-                Rates the reliability of historical precedents based on actual realized outcomes.
-              </p>
-            </div>
-            <div className="bg-navy-900/60 p-4 rounded-lg border border-navy-800/80 space-y-1">
-              <span className="text-[11px] font-mono text-purple-400 uppercase tracking-wider block">
-                Policy Health
-              </span>
-              <p className="text-xs text-slate-300">
-                Monitors Policy Drift by correlating written rules with live exception velocity.
-              </p>
+            <p className="text-xs text-slate-400 italic pt-1">
+              SigmaGo studies the relationships between these decisions over time.
+            </p>
+          </div>
+
+          {/* Decision Telemetry Concepts Grid (All 7 Concepts) */}
+          <div className="space-y-3">
+            <span className="text-xs font-mono uppercase tracking-wider text-slate-400 block">
+              Decision Intelligence Telemetry & Concepts
+            </span>
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+              <div className="bg-navy-900/60 p-4 rounded-lg border border-navy-800/80 space-y-1">
+                <span className="text-[11px] font-mono text-blue-400 uppercase tracking-wider block">
+                  Impact Factor
+                </span>
+                <p className="text-xs text-slate-300">
+                  Quantifies organizational blast radius across headcount, capital, and risk.
+                </p>
+              </div>
+              <div className="bg-navy-900/60 p-4 rounded-lg border border-navy-800/80 space-y-1">
+                <span className="text-[11px] font-mono text-amber-400 uppercase tracking-wider block">
+                  Deviation Factor
+                </span>
+                <p className="text-xs text-slate-300">
+                  Measures how far an exceptional approval steps outside established policy.
+                </p>
+              </div>
+              <div className="bg-navy-900/60 p-4 rounded-lg border border-navy-800/80 space-y-1">
+                <span className="text-[11px] font-mono text-emerald-400 uppercase tracking-wider block">
+                  Confidence Factor
+                </span>
+                <p className="text-xs text-slate-300">
+                  Rates the reliability of historical precedents based on actual realized outcomes.
+                </p>
+              </div>
+              <div className="bg-navy-900/60 p-4 rounded-lg border border-navy-800/80 space-y-1">
+                <span className="text-[11px] font-mono text-purple-400 uppercase tracking-wider block">
+                  Policy Health
+                </span>
+                <p className="text-xs text-slate-300">
+                  Monitors Policy Drift by correlating written rules with live exception velocity.
+                </p>
+              </div>
+              <div className="bg-navy-900/60 p-4 rounded-lg border border-navy-800/80 space-y-1">
+                <span className="text-[11px] font-mono text-cyan-400 uppercase tracking-wider block">
+                  Decision History
+                </span>
+                <p className="text-xs text-slate-300">
+                  A searchable, chronological cortex of why past choices were committed.
+                </p>
+              </div>
+              <div className="bg-navy-900/60 p-4 rounded-lg border border-navy-800/80 space-y-1">
+                <span className="text-[11px] font-mono text-rose-400 uppercase tracking-wider block">
+                  Exception Intelligence
+                </span>
+                <p className="text-xs text-slate-300">
+                  Aggregates recurring rule departures to guide proactive policy updates.
+                </p>
+              </div>
+              <div className="bg-navy-900/60 p-4 rounded-lg border border-navy-800/80 space-y-1 sm:col-span-2 lg:col-span-2">
+                <span className="text-[11px] font-mono text-indigo-300 uppercase tracking-wider block">
+                  Institutional Memory
+                </span>
+                <p className="text-xs text-slate-300">
+                  Preserves accumulated executive judgment so continuity survives human turnover.
+                </p>
+              </div>
             </div>
           </div>
 
           {/* STEP Framework diagram integration */}
-          <div className="pt-6">
+          <div className="pt-4">
             <StepFrameworkDiagram />
           </div>
         </div>
@@ -470,7 +560,7 @@ export default function HomePage() {
             href="/thinking"
             className="inline-flex items-center text-xs font-semibold text-ink-muted hover:text-ink transition-colors"
           >
-            <span>View all 8 frameworks</span>
+            <span>View all 12 frameworks</span>
             <ArrowRight className="w-3.5 h-3.5 ml-1" />
           </Link>
         </div>
@@ -602,48 +692,71 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 9. HOMEPAGE CONTACT CTA & FINAL THOUGHT */}
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
-        <div className="editorial-rule" />
-
-        <div className="space-y-4">
+      {/* 12. HOMEPAGE CONTACT CTA */}
+      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+        <div className="bg-editorial-cream/60 border border-editorial-border rounded-2xl p-8 sm:p-12 space-y-6">
           <span className="text-xs uppercase font-mono tracking-widest text-accent font-semibold">
             Continue the Conversation
           </span>
+          <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl text-ink font-normal leading-snug max-w-2xl mx-auto">
+            Interested in SigmaGo, the book, decision intelligence or simply exchanging ideas?
+          </h2>
+          <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
+            <Link
+              href="/book-a-conversation"
+              className="inline-flex items-center px-6 py-3 rounded-full bg-navy-950 hover:bg-navy-900 text-white text-xs font-semibold transition-all shadow-sm"
+            >
+              <Calendar className="w-3.5 h-3.5 mr-2 text-blue-300" />
+              <span>Book a Conversation</span>
+            </Link>
+
+            <a
+              href="mailto:soma.kiran20@gmail.com"
+              className="inline-flex items-center px-6 py-3 rounded-full border border-editorial-border bg-white hover:bg-surface text-ink text-xs font-semibold transition-colors"
+            >
+              <Mail className="w-3.5 h-3.5 mr-2 text-accent" />
+              <span>Email Soma</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* 15. FINAL HOMEPAGE CTA */}
+      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8 pt-6">
+        <div className="editorial-rule" />
+
+        <div className="space-y-4">
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-ink font-normal leading-tight">
             Organizations accumulate decisions every day.{' '}
             <span className="text-navy-900 italic block mt-1">
               The question is whether they accumulate intelligence with them.
             </span>
           </h2>
-          <p className="text-sm text-ink-muted max-w-lg mx-auto">
-            The reason I developed this website is to expand my network. I would love to converse with founders, CHROs, and builders exploring organizational memory, decision intelligence, or modern people strategy.
-          </p>
         </div>
 
         <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
+          <Link
+            href="/sigmago"
+            className="inline-flex items-center px-6 py-3 rounded-full bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold transition-all shadow-sm"
+          >
+            <Sparkles className="w-3.5 h-3.5 mr-2" />
+            <span>Explore SigmaGo</span>
+          </Link>
+
+          <Link
+            href="/thinking"
+            className="inline-flex items-center px-6 py-3 rounded-full border border-editorial-border bg-white hover:bg-surface text-ink text-xs font-semibold transition-colors"
+          >
+            <Compass className="w-3.5 h-3.5 mr-2 text-accent" />
+            <span>Read my thinking</span>
+          </Link>
+
           <Link
             href="/book-a-conversation"
             className="inline-flex items-center px-6 py-3 rounded-full bg-navy-950 hover:bg-navy-900 text-white text-xs font-semibold transition-all shadow-sm"
           >
             <Calendar className="w-3.5 h-3.5 mr-2 text-blue-300" />
             <span>Book a Conversation</span>
-          </Link>
-
-          <a
-            href="mailto:soma.kiran20@gmail.com"
-            className="inline-flex items-center px-6 py-3 rounded-full border border-editorial-border bg-white hover:bg-surface text-ink text-xs font-semibold transition-colors"
-          >
-            <Mail className="w-3.5 h-3.5 mr-2 text-accent" />
-            <span>Email Soma</span>
-          </a>
-
-          <Link
-            href="/sigmago"
-            className="inline-flex items-center px-5 py-3 text-xs font-semibold text-accent hover:text-navy-900 transition-colors"
-          >
-            <span>Explore SigmaGo</span>
-            <ArrowRight className="w-3.5 h-3.5 ml-1" />
           </Link>
         </div>
       </section>

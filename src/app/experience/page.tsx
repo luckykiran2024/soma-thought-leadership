@@ -11,18 +11,18 @@ export const metadata: Metadata = {
 
 export default function ExperiencePage() {
   const competencies = [
-    'Strategic HR Partnering',
-    'Organization Design',
-    'Talent Management',
-    'Performance Calibration',
-    'Leadership Advisory & NLP Coaching',
-    'Employee Listening Systems',
-    'People Analytics & Predictive Modeling',
-    'Organizational Change Governance',
-    'Technology Organization Design & Architecture',
-    'Engineering & Product Leadership Alignment',
-    'HR SaaS & Digital Transformation',
-    'Decision Management Architecture',
+    'Strategic HR partnering',
+    'Organization design',
+    'Talent management',
+    'Performance management',
+    'Leadership advisory',
+    'Employee listening',
+    'People analytics',
+    'Organizational change',
+    'Employee experience',
+    'Building and scaling technology organizations',
+    'Working with engineering, product and technology leaders',
+    'HR transformation',
   ];
 
   return (

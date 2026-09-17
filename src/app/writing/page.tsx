@@ -14,6 +14,7 @@ const CATEGORIES = [
   'People',
   'Technology',
   'AI',
+  'SigmaGo',
 ] as const;
 
 export default function WritingIndexPage() {
@@ -79,9 +80,16 @@ export default function WritingIndexPage() {
           >
             {/* Meta */}
             <div className="md:col-span-3 space-y-2">
-              <span className="inline-block px-2.5 py-1 rounded bg-surface border border-editorial-border text-[11px] font-mono text-ink">
-                {article.category}
-              </span>
+              <div className="flex items-center space-x-2">
+                <span className="inline-block px-2.5 py-1 rounded bg-surface border border-editorial-border text-[11px] font-mono text-ink">
+                  {article.category}
+                </span>
+                {article.source && (
+                  <span className="inline-block px-2 py-0.5 rounded bg-blue-50/60 border border-blue-200/60 text-[10px] font-mono text-navy-800">
+                    {article.source}
+                  </span>
+                )}
+              </div>
               <div className="text-xs text-ink-muted font-mono flex items-center space-x-3">
                 <span className="flex items-center">
                   <Calendar className="w-3 h-3 mr-1 text-ink-muted" />

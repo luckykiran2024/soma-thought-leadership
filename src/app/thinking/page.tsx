@@ -36,7 +36,7 @@ export default function ThinkingIndexPage() {
             <div className="space-y-4">
               <div className="flex items-center justify-between">
                 <span className="text-xs font-mono font-semibold uppercase tracking-wider text-accent">
-                  Framework 0{index + 1} · {fw.category}
+                  Framework {index + 1 < 10 ? `0${index + 1}` : index + 1} · {fw.category}
                 </span>
                 <span className="text-[11px] font-mono text-ink-muted">
                   {fw.diagramType.toUpperCase()}

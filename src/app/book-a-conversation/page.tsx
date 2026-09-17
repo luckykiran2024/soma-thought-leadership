@@ -12,6 +12,7 @@ export default function BookConversationPage() {
   // Read environment variable or fallback to Google Calendar appointment scheduling link
   const defaultBookingUrl =
     process.env.NEXT_PUBLIC_GOOGLE_BOOKING_URL ||
+    process.env.GOOGLE_BOOKING_URL ||
     'https://calendar.google.com/calendar/render?action=TEMPLATE&text=Conversation+with+Soma+Kiran+Gonella&add=soma.kiran20@gmail.com';
 
   const currentAppointment = APPOINTMENT_TYPES.find((a) => a.id === selectedType) || APPOINTMENT_TYPES[0];
@@ -36,7 +37,7 @@ export default function BookConversationPage() {
           Some ideas are better explored through conversation.
         </p>
         <p className="text-base text-ink-light leading-relaxed font-light">
-          The main purpose of this platform is to grow my network. I would love to converse with founders, CHROs, engineering leaders, and practitioners navigating scale, organizational design, decision memory, or simply looking to exchange ideas.
+          Whether you would like to discuss SigmaGo, decision intelligence, organizational challenges, my book, research, publishing, or simply exchange perspectives, you can schedule a conversation directly.
         </p>
       </div>
 
@@ -118,13 +119,16 @@ export default function BookConversationPage() {
       {/* Booking Action Card */}
       <div className="bg-white border border-editorial-border rounded-2xl p-8 sm:p-10 shadow-card space-y-6">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-6 border-b border-editorial-rule gap-4">
-          <div>
-            <span className="text-xs font-mono uppercase tracking-wider text-accent font-semibold block mb-1">
+          <div className="space-y-1">
+            <span className="text-xs font-mono uppercase tracking-wider text-accent font-semibold block">
               Confirmed Format: {currentAppointment.duration}
             </span>
             <h2 className="font-serif text-2xl sm:text-3xl text-ink font-normal">
               {currentAppointment.title}
             </h2>
+            <p className="text-xs text-ink-muted font-serif italic pt-0.5">
+              Looking forward to the conversation.
+            </p>
           </div>
 
           <div className="flex flex-wrap items-center gap-3">
@@ -132,7 +136,8 @@ export default function BookConversationPage() {
               onClick={handleOpenGoogleBooking}
               className="px-6 py-3 rounded-full bg-navy-950 hover:bg-navy-900 text-white text-xs font-semibold transition-all shadow-sm flex items-center space-x-2 group"
             >
-              <span>Schedule on Google Calendar</span>
+              <Calendar className="w-3.5 h-3.5 text-blue-300" />
+              <span>Choose a Time</span>
               <ExternalLink className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
             </button>
             <a

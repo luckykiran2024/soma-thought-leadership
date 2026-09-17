@@ -54,6 +54,11 @@ export default function SigmaGoPage() {
       tag: 'Adaptive Learning',
       description: 'Aggregates recurring operational exceptions across business units to recommend formal structural improvements before friction mounts.',
     },
+    {
+      title: 'Institutional Memory',
+      tag: 'Continuous Cortex',
+      description: 'Preserves the living lineage of precedent, organizational reasoning, and historical trade-offs, safeguarding judgment across leadership transitions.',
+    },
   ];
 
   return (

@@ -1,7 +1,35 @@
 import { NextResponse } from 'next/server';
 
+// In-memory sliding-window rate limiter
+const rateLimitMap = new Map<string, { count: number; resetTime: number }>();
+const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000; // 10 minutes
+const MAX_REQUESTS_PER_WINDOW = 5;
+
 export async function POST(request: Request) {
   try {
+    // Extract client IP for rate limiting
+    const forwardedFor = request.headers.get('x-forwarded-for');
+    const clientIp = forwardedFor ? forwardedFor.split(',')[0].trim() : 'anonymous-client';
+
+    const now = Date.now();
+    const clientRecord = rateLimitMap.get(clientIp);
+
+    if (clientRecord) {
+      if (now < clientRecord.resetTime) {
+        if (clientRecord.count >= MAX_REQUESTS_PER_WINDOW) {
+          return NextResponse.json(
+            { error: 'Rate limit exceeded. Please wait a few minutes before sending another message, or email directly.' },
+            { status: 429 }
+          );
+        }
+        clientRecord.count += 1;
+      } else {
+        rateLimitMap.set(clientIp, { count: 1, resetTime: now + RATE_LIMIT_WINDOW_MS });
+      }
+    } else {
+      rateLimitMap.set(clientIp, { count: 1, resetTime: now + RATE_LIMIT_WINDOW_MS });
+    }
+
     const body = await request.json();
     const { name, organization, role, email, reason, message, honeypot } = body;
 

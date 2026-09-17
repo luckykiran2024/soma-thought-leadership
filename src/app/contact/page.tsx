@@ -5,14 +5,12 @@ import Link from 'next/link';
 import { Mail, Phone, Linkedin, Send, CheckCircle2, Shield, Calendar, AlertCircle } from 'lucide-react';
 
 const REASON_OPTIONS = [
-  'SigmaGo Pilot & Product Inquiry',
-  'The Other Book & Publishing',
-  'Speaking Engagement / Keynote',
-  'Podcast Guest Appearance',
-  'Research & Academic Collaboration',
-  'Leadership & Strategic Advisory',
-  'Founder & Investor Discussion',
+  'SigmaGo',
+  'Book / Publishing',
+  'Speaking / Podcast',
+  'Research',
   'Professional Networking',
+  'Investment / Founder Discussion',
   'Other',
 ];
 
@@ -22,7 +20,7 @@ export default function ContactPage() {
     organization: '',
     role: '',
     email: '',
-    reason: 'SigmaGo Pilot & Product Inquiry',
+    reason: 'SigmaGo',
     message: '',
     honeypot: '', // hidden field for bot trap
   });
@@ -165,28 +163,48 @@ export default function ContactPage() {
           {/* Topics of Conversation */}
           <div className="bg-editorial-cream/40 border border-editorial-border rounded-xl p-6 sm:p-8 space-y-4">
             <span className="text-xs font-mono uppercase tracking-wider text-accent font-semibold block">
-              Open For Conversations Around
+              I am open to conversations around:
             </span>
-            <ul className="space-y-2 text-xs text-ink-light">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-ink-light pt-1">
               <li className="flex items-center">
-                <span className="w-1.5 h-1.5 rounded-full bg-navy-950 mr-2" />
-                <span>SigmaGo enterprise pilot programs and partnerships</span>
+                <span className="w-1.5 h-1.5 rounded-full bg-navy-950 mr-2 flex-shrink-0" />
+                <span>SigmaGo pilots</span>
               </li>
               <li className="flex items-center">
-                <span className="w-1.5 h-1.5 rounded-full bg-navy-950 mr-2" />
-                <span>Organizational decision intelligence and memory</span>
+                <span className="w-1.5 h-1.5 rounded-full bg-navy-950 mr-2 flex-shrink-0" />
+                <span>Decision intelligence</span>
               </li>
               <li className="flex items-center">
-                <span className="w-1.5 h-1.5 rounded-full bg-navy-950 mr-2" />
-                <span>Book, publishing, and serialization inquiries</span>
+                <span className="w-1.5 h-1.5 rounded-full bg-navy-950 mr-2 flex-shrink-0" />
+                <span>Organizational decision making</span>
               </li>
               <li className="flex items-center">
-                <span className="w-1.5 h-1.5 rounded-full bg-navy-950 mr-2" />
-                <span>Keynotes, executive workshops, and podcast interviews</span>
+                <span className="w-1.5 h-1.5 rounded-full bg-navy-950 mr-2 flex-shrink-0" />
+                <span>Book and publishing opportunities</span>
               </li>
               <li className="flex items-center">
-                <span className="w-1.5 h-1.5 rounded-full bg-navy-950 mr-2" />
-                <span>Founder and seed-stage advisory discussions</span>
+                <span className="w-1.5 h-1.5 rounded-full bg-navy-950 mr-2 flex-shrink-0" />
+                <span>Research collaborations</span>
+              </li>
+              <li className="flex items-center">
+                <span className="w-1.5 h-1.5 rounded-full bg-navy-950 mr-2 flex-shrink-0" />
+                <span>Speaking engagements</span>
+              </li>
+              <li className="flex items-center">
+                <span className="w-1.5 h-1.5 rounded-full bg-navy-950 mr-2 flex-shrink-0" />
+                <span>Podcasts</span>
+              </li>
+              <li className="flex items-center">
+                <span className="w-1.5 h-1.5 rounded-full bg-navy-950 mr-2 flex-shrink-0" />
+                <span>Leadership conversations</span>
+              </li>
+              <li className="flex items-center">
+                <span className="w-1.5 h-1.5 rounded-full bg-navy-950 mr-2 flex-shrink-0" />
+                <span>Founder and investor discussions</span>
+              </li>
+              <li className="flex items-center">
+                <span className="w-1.5 h-1.5 rounded-full bg-navy-950 mr-2 flex-shrink-0" />
+                <span>Professional collaborations</span>
               </li>
             </ul>
           </div>

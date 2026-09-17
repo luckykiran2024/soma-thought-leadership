@@ -6,6 +6,9 @@ import { ArrowLeft, ArrowRight, Sparkles, Compass, CheckCircle2, AlertTriangle, 
 import { FRAMEWORKS, ARTICLES } from '@/lib/content';
 import FourRDiagram from '@/components/frameworks/FourRDiagram';
 import StepFrameworkDiagram from '@/components/frameworks/StepFrameworkDiagram';
+import ComparisonDiagram from '@/components/frameworks/ComparisonDiagram';
+import LifecycleFlowDiagram from '@/components/frameworks/LifecycleFlowDiagram';
+import DecisionMatrixDiagram from '@/components/frameworks/DecisionMatrixDiagram';
 import SocialShare from '@/components/writing/SocialShare';
 import JsonLd from '@/components/seo/JsonLd';
 
@@ -95,7 +98,7 @@ export default function FrameworkDetailPage({ params }: PageProps) {
         </div>
       </header>
 
-      {/* Embedded Interactive Visual System if relevant */}
+      {/* Embedded Interactive Visual System based on diagramType */}
       {framework.diagramType === 'four-r' && (
         <div className="my-8">
           <FourRDiagram />
@@ -105,6 +108,24 @@ export default function FrameworkDetailPage({ params }: PageProps) {
       {framework.diagramType === 'step' && (
         <div className="my-8">
           <StepFrameworkDiagram />
+        </div>
+      )}
+
+      {framework.diagramType === 'comparison' && (
+        <div className="my-8">
+          <ComparisonDiagram title={`Structural Comparison: ${framework.shortTitle}`} />
+        </div>
+      )}
+
+      {framework.diagramType === 'flow' && (
+        <div className="my-8">
+          <LifecycleFlowDiagram title={`Process Architecture: ${framework.shortTitle}`} />
+        </div>
+      )}
+
+      {framework.diagramType === 'matrix' && (
+        <div className="my-8">
+          <DecisionMatrixDiagram title={`Governance Matrix: ${framework.shortTitle}`} />
         </div>
       )}
 

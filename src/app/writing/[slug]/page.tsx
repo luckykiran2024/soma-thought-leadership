@@ -8,6 +8,7 @@ import { ARTICLES } from '@/lib/content';
 import { formatDate } from '@/lib/utils';
 import ReadingProgress from '@/components/writing/ReadingProgress';
 import SocialShare from '@/components/writing/SocialShare';
+import MarkdownRenderer from '@/components/writing/MarkdownRenderer';
 import JsonLd from '@/components/seo/JsonLd';
 
 interface PageProps {
@@ -131,15 +132,8 @@ export default function ArticleDetailPage({ params }: PageProps) {
         </div>
 
         {/* Article Body */}
-        <article className="prose prose-slate prose-lg max-w-none prose-headings:font-serif prose-headings:font-normal prose-h2:text-2xl prose-h3:text-xl prose-p:text-ink-light prose-p:leading-relaxed prose-p:text-base sm:prose-p:text-lg prose-p:font-light font-sans">
-          <div
-            className="space-y-6 text-ink-light"
-            dangerouslySetInnerHTML={{
-              __html: article.content
-                .replace(/### (.*)/g, '<h3 class="font-serif text-2xl text-ink font-normal mt-8 mb-3">$1</h3>')
-                .replace(/\n\n/g, '<p class="text-base sm:text-lg leading-relaxed text-ink-light my-4 font-light"></p>')
-            }}
-          />
+        <article className="prose prose-slate prose-lg max-w-none font-sans">
+          <MarkdownRenderer content={article.content} />
         </article>
 
         {/* Tags */}

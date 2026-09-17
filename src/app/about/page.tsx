@@ -86,7 +86,7 @@ export default function AboutPage() {
               <span>Biography & Philosophy</span>
             </div>
             <h1 className="font-serif text-4xl sm:text-5xl text-ink font-normal leading-tight">
-              About Soma Kiran Gonella
+              About Soma
             </h1>
           </div>
 
@@ -138,7 +138,7 @@ export default function AboutPage() {
                 Practice
               </h3>
               <p className="text-sm text-ink-light leading-relaxed font-light">
-                Working inside organizations, advising engineering and product leadership, and understanding how decisions actually happen—messy, pressured, political, and fast.
+                Working inside organizations and understanding how decisions actually happen.
               </p>
             </div>
             <div className="pt-4 border-t border-editorial-rule">
@@ -165,7 +165,7 @@ export default function AboutPage() {
                 Research & Writing
               </h3>
               <p className="text-sm text-ink-light leading-relaxed font-light">
-                Developing original frameworks around decision management, institutional memory, decision debt, and authoring <em>The Other Book</em>.
+                Developing ideas around decision management and organizational intelligence.
               </p>
             </div>
             <div className="pt-4 border-t border-editorial-rule">
@@ -192,7 +192,7 @@ export default function AboutPage() {
                 Building
               </h3>
               <p className="text-sm text-slate-300 leading-relaxed font-light">
-                Turning philosophical insights and empirical taxonomies into software: developing <em>SigmaGo</em> to help organizations capture, index, and reuse decision context.
+                Turning those ideas into SigmaGo.
               </p>
             </div>
             <div className="pt-4 border-t border-navy-800">

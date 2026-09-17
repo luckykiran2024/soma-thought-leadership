@@ -8,7 +8,7 @@ import { Menu, X, ArrowUpRight, Calendar, Sparkles } from 'lucide-react';
 const NAV_ITEMS = [
   { label: 'Home', href: '/' },
   { label: 'Thinking', href: '/thinking' },
-  { label: 'The Book', href: '/book' },
+  { label: 'Book', href: '/book' },
   { label: 'SigmaGo', href: '/sigmago' },
   { label: 'Writing', href: '/writing' },
   { label: 'Experience', href: '/experience' },
@@ -79,7 +79,7 @@ export default function Navbar() {
             className="hidden md:inline-flex items-center text-xs font-medium text-ink-muted hover:text-ink px-3 py-1.5 rounded-full hover:bg-surface transition-colors"
           >
             <Sparkles className="w-3.5 h-3.5 mr-1.5 text-accent" />
-            <span>SigmaGo</span>
+            <span>Explore SigmaGo</span>
           </Link>
 
           <Link

@@ -50,6 +50,12 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/autonomous-kitchen" className="hover:text-white transition-colors flex items-center">
+                  <span>The Autonomous Kitchen</span>
+                  <ArrowUpRight className="w-3 h-3 ml-1 text-accent" />
+                </Link>
+              </li>
+              <li>
                 <Link href="/writing" className="hover:text-white transition-colors">
                   Writing & Research
                 </Link>

@@ -692,6 +692,67 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* SYSTEMS & VENTURES: THE AUTONOMOUS KITCHEN */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-white border border-editorial-border rounded-2xl p-8 sm:p-12 shadow-card overflow-hidden">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div className="lg:col-span-7 space-y-4">
+              <div className="inline-flex items-center space-x-2 text-xs font-mono uppercase tracking-widest text-accent font-semibold">
+                <Sparkles className="w-3.5 h-3.5" />
+                <span>Systems Architecture Study · Concept Film</span>
+              </div>
+              <h2 className="font-serif text-3xl sm:text-4xl text-ink font-normal leading-snug">
+                The Autonomous Kitchen:{' '}
+                <span className="italic text-navy-800 block">
+                  From Alchemy to Algorithm
+                </span>
+              </h2>
+              <p className="text-base text-ink-light leading-relaxed font-light">
+                An architectural study and concept film on closed-loop culinary robotics. Exploring how sensory telemetry (VOC aroma detection and dynamic thermodynamic state machines) replaces crude timer recipes with deterministic domestic execution.
+              </p>
+              <div className="pt-2 flex flex-wrap items-center gap-3">
+                <Link
+                  href="/autonomous-kitchen"
+                  className="inline-flex items-center px-6 py-3 rounded-full bg-navy-950 hover:bg-navy-900 text-white text-xs font-semibold transition-all shadow-sm group"
+                >
+                  <span>Watch Concept Film & Architecture Study</span>
+                  <ArrowRight className="w-3.5 h-3.5 ml-1.5 group-hover:translate-x-0.5 transition-transform" />
+                </Link>
+                <Link
+                  href="/writing/organizational-inheritance"
+                  className="inline-flex items-center px-5 py-3 rounded-full border border-editorial-border bg-white text-ink text-xs font-semibold hover:bg-surface transition-colors"
+                >
+                  <span>Read "The Small Pancakes" Essay</span>
+                </Link>
+              </div>
+            </div>
+
+            <div className="lg:col-span-5">
+              <Link
+                href="/autonomous-kitchen"
+                className="group relative block rounded-xl overflow-hidden border border-editorial-border shadow-md bg-navy-950 aspect-video"
+              >
+                <Image
+                  src="/images/kitchen/modern_kitchen_twilight.jpg"
+                  alt="The Autonomous Kitchen Master"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500 opacity-90"
+                />
+                <div className="absolute inset-0 bg-navy-950/30 group-hover:bg-navy-950/10 transition-colors flex items-center justify-center">
+                  <div className="w-14 h-14 rounded-full bg-white/90 text-navy-950 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                    <span className="ml-1 text-sm font-serif font-bold">▶</span>
+                  </div>
+                </div>
+                <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-[11px] font-mono text-white/90 bg-navy-950/70 backdrop-blur-sm px-3 py-1.5 rounded">
+                  <span>90-Sec Master Film</span>
+                  <span>1080p 30fps</span>
+                </div>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 12. HOMEPAGE CONTACT CTA */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
         <div className="bg-editorial-cream/60 border border-editorial-border rounded-2xl p-8 sm:p-12 space-y-6">

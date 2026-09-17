@@ -10,6 +10,7 @@ const NAV_ITEMS = [
   { label: 'Thinking', href: '/thinking' },
   { label: 'Book', href: '/book' },
   { label: 'SigmaGo', href: '/sigmago' },
+  { label: 'Kitchen Study', href: '/autonomous-kitchen' },
   { label: 'Writing', href: '/writing' },
   { label: 'Experience', href: '/experience' },
   { label: 'About', href: '/about' },

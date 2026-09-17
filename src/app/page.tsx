@@ -27,12 +27,13 @@ export default function HomePage() {
 
   return (
     <div className="space-y-24 sm:space-y-32 pb-24">
-      {/* 1. HERO SECTION */}
-      <section className="relative pt-12 sm:pt-20 pb-16 border-b border-editorial-border/60 overflow-hidden">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Identity & Status Tag */}
-          <div className="flex items-center space-x-3 mb-8 animate-fade-in">
-            <div className="relative w-10 h-10 rounded-full overflow-hidden border border-editorial-border shadow-sm flex-shrink-0">
+      {/* 1. HERO SECTION (Centered Broadsheet Editorial) */}
+      <section className="relative pt-12 sm:pt-20 pb-16 border-b border-editorial-border/60 overflow-hidden bg-gradient-to-b from-surface/40 via-background to-background">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          {/* Enhanced Author Presentation */}
+          <div className="flex flex-col items-center space-y-4 mb-8 animate-fade-in">
+            {/* Dignified Executive Portrait */}
+            <div className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden border-2 border-white shadow-xl ring-2 ring-editorial-border/80 flex-shrink-0">
               <Image
                 src="/images/profile.jpg"
                 alt="Soma Kiran Gonella"
@@ -41,34 +42,36 @@ export default function HomePage() {
                 priority
               />
             </div>
-            <div>
-              <span className="text-xs font-semibold text-ink uppercase tracking-wider block">
-                Soma Kiran Gonella
-              </span>
-              <span className="text-[11px] text-ink-muted block">
+
+            <div className="space-y-1.5 text-center">
+              <div className="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-white border border-editorial-border shadow-subtle text-[11px] font-mono uppercase tracking-widest text-ink">
+                <span className="w-2 h-2 rounded-full bg-accent" />
+                <span className="font-semibold">Soma Kiran Gonella</span>
+              </div>
+              <p className="text-xs sm:text-sm text-ink-muted font-medium tracking-tight">
                 HR Business Partner · Author · Builder of SigmaGo
-              </span>
+              </p>
             </div>
           </div>
 
-          {/* Intellectual Hero Statement */}
-          <div className="space-y-6 max-w-4xl">
-            <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl font-normal text-ink tracking-tight leading-[1.12]">
+          {/* Centered Intellectual Hero Statement */}
+          <div className="space-y-6 max-w-4xl mx-auto">
+            <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl font-normal text-ink tracking-tight leading-[1.14]">
               Organizations remember transactions.{' '}
-              <span className="text-navy-800 italic block mt-1">
+              <span className="text-navy-900 italic block mt-2">
                 They rarely remember decisions.
               </span>
             </h1>
 
-            <p className="text-lg sm:text-xl text-ink-light leading-relaxed max-w-2xl font-light">
+            <p className="text-lg sm:text-xl text-ink-light leading-relaxed max-w-2xl mx-auto font-light">
               I study how organizations make decisions, preserve their reasoning, learn from exceptions, and turn accumulated judgment into institutional intelligence.
             </p>
 
-            {/* CTAs */}
-            <div className="pt-4 flex flex-wrap items-center gap-3 sm:gap-4">
+            {/* Refined, Balanced CTAs */}
+            <div className="pt-4 flex flex-wrap items-center justify-center gap-3 sm:gap-4">
               <Link
                 href="/thinking"
-                className="inline-flex items-center px-6 py-3 rounded-full bg-navy-950 hover:bg-navy-900 text-white text-sm font-semibold transition-all shadow-sm hover:shadow group"
+                className="inline-flex items-center px-6 py-3 rounded-full bg-navy-950 hover:bg-navy-900 text-white text-xs sm:text-sm font-semibold transition-all shadow-sm hover:shadow group"
               >
                 <span>Explore my work</span>
                 <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-0.5 transition-transform" />
@@ -76,7 +79,7 @@ export default function HomePage() {
 
               <Link
                 href="/sigmago"
-                className="inline-flex items-center px-6 py-3 rounded-full bg-white hover:bg-surface text-ink text-sm font-semibold border border-editorial-border transition-all shadow-subtle"
+                className="inline-flex items-center px-6 py-3 rounded-full bg-white hover:bg-surface text-ink text-xs sm:text-sm font-semibold border border-editorial-border transition-all shadow-subtle"
               >
                 <Sparkles className="w-4 h-4 mr-2 text-accent" />
                 <span>Discover SigmaGo</span>
@@ -84,11 +87,56 @@ export default function HomePage() {
 
               <Link
                 href="/book-a-conversation"
-                className="inline-flex items-center px-5 py-3 text-sm font-medium text-ink-muted hover:text-ink transition-colors"
+                className="inline-flex items-center px-6 py-3 rounded-full border border-editorial-border bg-white hover:bg-surface text-ink text-xs sm:text-sm font-semibold transition-all shadow-subtle"
               >
-                <Calendar className="w-4 h-4 mr-1.5 text-accent" />
+                <Calendar className="w-4 h-4 mr-2 text-accent" />
                 <span>Book a Conversation</span>
               </Link>
+            </div>
+
+            {/* Broadsheet Domain Ribbon */}
+            <div className="pt-10 mt-12 border-t border-editorial-border/60">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center text-xs font-mono">
+                <Link
+                  href="/experience"
+                  className="p-3.5 bg-white border border-editorial-border/80 rounded-xl hover:border-ink transition-colors shadow-subtle group"
+                >
+                  <span className="text-accent font-semibold block text-sm group-hover:text-navy-900 transition-colors">
+                    11+ Years
+                  </span>
+                  <span className="text-ink-muted text-[11px]">HR & Org Advisory</span>
+                </Link>
+
+                <Link
+                  href="/book"
+                  className="p-3.5 bg-white border border-editorial-border/80 rounded-xl hover:border-ink transition-colors shadow-subtle group"
+                >
+                  <span className="text-accent font-semibold block text-sm group-hover:text-navy-900 transition-colors">
+                    The Other Book
+                  </span>
+                  <span className="text-ink-muted text-[11px]">4R Decision Memory</span>
+                </Link>
+
+                <Link
+                  href="/sigmago"
+                  className="p-3.5 bg-white border border-editorial-border/80 rounded-xl hover:border-ink transition-colors shadow-subtle group"
+                >
+                  <span className="text-accent font-semibold block text-sm group-hover:text-navy-900 transition-colors">
+                    SigmaGo
+                  </span>
+                  <span className="text-ink-muted text-[11px]">Decision Intelligence</span>
+                </Link>
+
+                <Link
+                  href="/thinking"
+                  className="p-3.5 bg-white border border-editorial-border/80 rounded-xl hover:border-ink transition-colors shadow-subtle group"
+                >
+                  <span className="text-accent font-semibold block text-sm group-hover:text-navy-900 transition-colors">
+                    12 Frameworks
+                  </span>
+                  <span className="text-ink-muted text-[11px]">Original Research</span>
+                </Link>
+              </div>
             </div>
           </div>
         </div>

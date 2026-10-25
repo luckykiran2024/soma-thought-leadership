@@ -45,6 +45,59 @@
   font-style: italic;
 }
 
+/* Editorial type rhythm */
+.editorial-page {
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures;
+}
+
+.editorial-page :is(h1, h2, h3) {
+  text-wrap: balance;
+}
+
+.editorial-page h1 {
+  letter-spacing: -0.045em;
+}
+
+.editorial-page h2 {
+  letter-spacing: -0.028em;
+}
+
+.editorial-page h3 {
+  letter-spacing: -0.018em;
+}
+
+.editorial-page p,
+.editorial-page li {
+  text-wrap: pretty;
+}
+
+.editorial-page strong {
+  font-weight: 600;
+}
+
+.editorial-page a[class~='rounded-full'] {
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+}
+
+.editorial-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  line-height: 1.45;
+  letter-spacing: 0.16em;
+}
+
+.editorial-kicker::before {
+  content: '';
+  width: 1.5rem;
+  height: 1px;
+  flex: 0 0 auto;
+  background: currentColor;
+  opacity: 0.55;
+}
+
 /* Subtle custom scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
@@ -168,6 +221,23 @@
 }
 
 @media (max-width: 639px) {
+  .editorial-page h1 {
+    letter-spacing: -0.035em;
+  }
+
+  .editorial-page h2 {
+    letter-spacing: -0.022em;
+  }
+
+  .editorial-kicker {
+    gap: 0.5rem;
+    letter-spacing: 0.13em;
+  }
+
+  .editorial-kicker::before {
+    width: 1rem;
+  }
+
   .scroll-reveal {
     --reveal-y: 38px;
     transform: translate3d(var(--reveal-x), var(--reveal-y), 0) scale(0.975) rotate(var(--reveal-rotate));

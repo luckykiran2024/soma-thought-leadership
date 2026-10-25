@@ -26,7 +26,7 @@ export default function HomePage() {
   const featuredFrameworks = FRAMEWORKS.slice(0, 4);
 
   return (
-    <div className="space-y-16 sm:space-y-24 lg:space-y-32 pb-16 sm:pb-24">
+    <div className="editorial-page space-y-16 sm:space-y-24 lg:space-y-32 pb-16 sm:pb-24">
       {/* 1. HERO SECTION: INTRODUCING SOMA KIRAN GONELLA */}
       <section className="relative pt-8 sm:pt-16 lg:pt-20 pb-12 sm:pb-16 border-b border-editorial-border/60 overflow-hidden bg-gradient-to-b from-surface/50 via-background to-background">
         <div className="scroll-graphic" aria-hidden="true"><span /><span /></div>
@@ -44,7 +44,7 @@ export default function HomePage() {
             </div>
 
             <div className="space-y-2 text-center">
-              <div className="inline-flex items-center space-x-2 px-3 sm:px-4 py-1.5 rounded-full bg-white border border-editorial-border shadow-subtle text-[10px] sm:text-xs font-mono uppercase tracking-[0.14em] sm:tracking-widest text-ink">
+              <div className="inline-flex items-center space-x-2 px-3 sm:px-4 py-1.5 rounded-full bg-white border border-editorial-border shadow-subtle text-[11px] sm:text-xs font-mono uppercase tracking-[0.12em] sm:tracking-widest text-ink leading-relaxed">
                 <span className="w-2 h-2 rounded-full bg-emerald-600" />
                 <span className="font-semibold">HR Business Partner · Author · Product Builder</span>
               </div>
@@ -57,7 +57,7 @@ export default function HomePage() {
               <h1 className="font-serif text-[2.65rem] sm:text-6xl lg:text-7xl font-normal text-ink tracking-tight leading-[1.05] sm:leading-[1.12]">
                 Soma Kiran Gonella
               </h1>
-              <p className="font-serif text-xl sm:text-2xl text-navy-900 italic font-normal">
+              <p className="font-serif text-xl sm:text-2xl text-navy-900 italic font-normal leading-snug max-w-2xl mx-auto">
                 Turning organizational decisions into reusable intelligence
               </p>
             </div>
@@ -177,7 +177,7 @@ export default function HomePage() {
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-editorial-cream/60 border border-editorial-border rounded-2xl p-5 sm:p-12 space-y-6 sm:space-y-8">
           <div className="space-y-3 text-center sm:text-left">
-            <span className="text-xs uppercase font-mono tracking-widest text-accent font-semibold block">
+            <span className="editorial-kicker text-xs uppercase font-mono tracking-widest text-accent font-semibold">
               The Question Behind My Work
             </span>
             <h2 className="font-serif text-3xl sm:text-5xl text-ink font-normal leading-tight">
@@ -191,16 +191,12 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-ink-light font-serif italic border-y border-editorial-rule py-6">
-            <div className="space-y-2">
-              <p>· Some become policies.</p>
-              <p>· Some become exceptions.</p>
-            </div>
-            <div className="space-y-2">
-              <p>· Some quietly become precedents.</p>
-              <p>· Some disappear entirely.</p>
-            </div>
-          </div>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 text-sm text-ink-light font-serif italic border-y border-editorial-rule py-6 list-disc list-inside marker:text-accent">
+            <li>Some become policies.</li>
+            <li>Some become exceptions.</li>
+            <li>Some quietly become precedents.</li>
+            <li>Some disappear entirely.</li>
+          </ul>
 
           <div className="space-y-4">
             <p className="text-sm font-medium text-ink">
@@ -256,13 +252,13 @@ export default function HomePage() {
       {/* 3. THREE DIMENSIONS OF MY WORK */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-4 mb-10 text-center sm:text-left">
-          <span className="text-xs uppercase font-mono tracking-widest text-accent font-semibold">
+          <span className="editorial-kicker text-xs uppercase font-mono tracking-widest text-accent font-semibold">
             Research · Writing · Product
           </span>
           <h2 className="font-serif text-3xl sm:text-4xl font-normal text-ink">
             One question, explored in three forms
           </h2>
-          <p className="text-sm text-ink-muted max-w-xl">
+          <p className="text-base text-ink-muted leading-relaxed max-w-2xl">
             My research, writing, and technology are not separate ventures—they are three connected dimensions solving organizational decision amnesia.
           </p>
         </div>
@@ -358,7 +354,7 @@ export default function HomePage() {
             {/* Left column: Book premise */}
             <div className="lg:col-span-6 space-y-6">
               <div className="space-y-1">
-                <span className="text-xs font-mono uppercase tracking-widest text-accent font-semibold">
+                <span className="editorial-kicker text-xs font-mono uppercase tracking-widest text-accent font-semibold">
                   Forthcoming Book
                 </span>
                 <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-ink font-normal leading-tight">
@@ -634,7 +630,7 @@ export default function HomePage() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
           <div>
-            <span className="text-xs uppercase font-mono tracking-widest text-accent font-semibold">
+            <span className="editorial-kicker text-xs uppercase font-mono tracking-widest text-accent font-semibold">
               Original Frameworks
             </span>
             <h2 className="font-serif text-3xl sm:text-4xl font-normal text-ink mt-1">
@@ -667,10 +663,10 @@ export default function HomePage() {
                 <h3 className="font-serif text-2xl text-ink font-normal group-hover:text-navy-900 transition-colors">
                   {fw.shortTitle}
                 </h3>
-                <p className="text-xs font-serif italic text-ink-muted">
+                <p className="text-sm font-serif italic text-ink-muted leading-relaxed">
                   {fw.tagline}
                 </p>
-                <p className="text-xs text-ink-light leading-relaxed line-clamp-3">
+                <p className="text-sm text-ink-light leading-relaxed line-clamp-3">
                   {fw.proposition}
                 </p>
               </div>
@@ -688,7 +684,7 @@ export default function HomePage() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
           <div>
-            <span className="text-xs uppercase font-mono tracking-widest text-accent font-semibold">
+            <span className="editorial-kicker text-xs uppercase font-mono tracking-widest text-accent font-semibold">
               Selected Articles & Research
             </span>
             <h2 className="font-serif text-3xl sm:text-4xl font-normal text-ink mt-1">
@@ -722,7 +718,7 @@ export default function HomePage() {
                 <h3 className="font-serif text-xl sm:text-2xl text-ink font-normal group-hover:text-accent transition-colors">
                   {article.title}
                 </h3>
-                <p className="text-xs sm:text-sm text-ink-muted line-clamp-2 leading-relaxed font-light">
+                <p className="text-sm text-ink-muted line-clamp-2 leading-relaxed font-light">
                   {article.abstract}
                 </p>
               </div>
@@ -743,7 +739,7 @@ export default function HomePage() {
         <div className="bg-editorial-cream/40 border border-editorial-border rounded-2xl p-8 sm:p-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-7 space-y-4">
-              <span className="text-xs font-mono uppercase tracking-widest text-accent font-semibold">
+              <span className="editorial-kicker text-xs font-mono uppercase tracking-widest text-accent font-semibold">
                 Operational Foundation
               </span>
               <h2 className="font-serif text-3xl sm:text-4xl text-ink font-normal">
@@ -752,7 +748,7 @@ export default function HomePage() {
               <p className="text-base text-ink-light leading-relaxed font-light">
                 Experience across technology, fintech, and automotive R&D environments, working at the intersection of business strategy, people, leadership, and organizational systems.
               </p>
-              <p className="text-xs text-ink-muted font-serif italic">
+              <p className="text-sm text-ink-muted font-serif italic leading-relaxed max-w-2xl">
                 "My ideas about organizations did not come from management textbooks. They came from observing what happens when critical decisions break down in real-world engineering and product environments."
               </p>
             </div>
@@ -782,7 +778,7 @@ export default function HomePage() {
         <div className="bg-white border border-editorial-border rounded-2xl p-8 sm:p-12 shadow-card overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-7 space-y-4">
-              <div className="inline-flex items-center space-x-2 text-xs font-mono uppercase tracking-widest text-accent font-semibold">
+              <div className="editorial-kicker inline-flex items-center text-xs font-mono uppercase tracking-widest text-accent font-semibold">
                 <Sparkles className="w-3.5 h-3.5" />
                 <span>Systems Architecture Study · Concept Film</span>
               </div>
@@ -841,7 +837,7 @@ export default function HomePage() {
       {/* 12. HOMEPAGE CONTACT CTA */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
         <div className="bg-editorial-cream/60 border border-editorial-border rounded-2xl p-8 sm:p-12 space-y-6">
-          <span className="text-xs uppercase font-mono tracking-widest text-accent font-semibold">
+          <span className="editorial-kicker text-xs uppercase font-mono tracking-widest text-accent font-semibold">
             Continue the Conversation
           </span>
           <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl text-ink font-normal leading-snug max-w-2xl mx-auto">

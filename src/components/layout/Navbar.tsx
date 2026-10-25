@@ -44,9 +44,9 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Brand identity */}
-        <Link href="/" className="group flex items-center">
+        <Link href="/" className="group flex items-center min-w-0">
           <span className="font-serif text-lg sm:text-xl font-medium tracking-tight text-ink group-hover:text-accent transition-colors">
-            Soma Kiran Gonella
+            Soma Kiran<span className="hidden min-[390px]:inline"> Gonella</span>
           </span>
         </Link>
 
@@ -93,18 +93,13 @@ export default function Navbar() {
         </div>
 
         {/* Mobile menu toggle */}
-        <div className="lg:hidden flex items-center space-x-2">
-          <Link
-            href="/book-a-conversation"
-            className="text-xs font-semibold px-3 py-1.5 rounded-full bg-navy-950 text-white sm:hidden"
-          >
-            Book Call
-          </Link>
-
+        <div className="lg:hidden flex items-center">
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="p-2 rounded-lg text-ink-muted hover:text-ink hover:bg-surface focus:outline-none"
+            className="w-11 h-11 inline-flex items-center justify-center rounded-lg text-ink-muted hover:text-ink hover:bg-surface focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
             aria-label="Toggle Navigation Menu"
+            aria-expanded={mobileMenuOpen}
+            aria-controls="mobile-navigation"
           >
             {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
@@ -113,7 +108,7 @@ export default function Navbar() {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-background border-b border-editorial-border px-4 pt-3 pb-6 space-y-2 shadow-elevated animate-fade-in">
+        <div id="mobile-navigation" className="lg:hidden max-h-[calc(100vh-4rem)] overflow-y-auto bg-background border-b border-editorial-border px-4 pt-3 pb-6 space-y-2 shadow-elevated animate-fade-in">
           <div className="grid grid-cols-2 gap-1 pb-3 border-b border-editorial-rule">
             {NAV_ITEMS.map((item) => {
               const isActive = pathname === item.href;

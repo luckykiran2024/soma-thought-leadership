@@ -4,9 +4,9 @@ import { Mail, Phone, ArrowUpRight, Linkedin } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="bg-navy-950 text-slate-300 pt-16 pb-12 border-t border-navy-800">
+    <footer className="bg-navy-950 text-slate-300 pt-12 sm:pt-16 pb-8 sm:pb-12 border-t border-navy-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-navy-800/80">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 sm:gap-10 pb-10 sm:pb-12 border-b border-navy-800/80">
           {/* Main thesis & identity */}
           <div className="md:col-span-6 space-y-4">
             <div className="space-y-1">
@@ -19,7 +19,7 @@ export default function Footer() {
             </div>
             
             <p className="text-sm text-slate-400 max-w-md leading-relaxed">
-              Companies have systems to remember money, customers, employees, projects, and transactions, but very few systems designed to preserve the reasoning behind important decisions.
+              I help leaders turn organizational decisions, their context, and their outcomes into intelligence teams can reuse.
             </p>
 
             <div className="pt-2 text-xs text-slate-400 font-serif italic">
@@ -132,16 +132,15 @@ export default function Footer() {
         </div>
 
         {/* Bottom copyright */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
-          <p>© {new Date().getFullYear()} Soma Kiran Gonella. All intellectual property and rights reserved.</p>
-          <div className="flex items-center space-x-6">
+        <div className="pt-6 sm:pt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between text-xs text-slate-500 gap-4">
+          <p>© {new Date().getFullYear()} Soma Kiran Gonella. All rights reserved.</p>
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
             <Link href="/contact" className="hover:text-slate-400 transition-colors">
               Contact
             </Link>
             <Link href="/book-a-conversation" className="hover:text-slate-400 transition-colors">
               Schedule Discussion
             </Link>
-            <span className="text-slate-600">·</span>
             <span>Hyderabad, India</span>
           </div>
         </div>

@@ -84,7 +84,7 @@ export default function RootLayout({
       <body className="font-sans antialiased min-h-screen flex flex-col selection:bg-navy-950 selection:text-white">
         <ScrollMotion />
         <Navbar />
-        <main className="flex-grow pt-20">
+        <main className="flex-grow pt-16 sm:pt-20">
           {children}
         </main>
         <Footer />

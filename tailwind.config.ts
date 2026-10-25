@@ -10,33 +10,33 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: '#FAF9F6', // warm off-white / parchment-tinted editorial canvas
+        background: '#EFF6E0', // soft ivory-green canvas
         paper: '#FFFFFF',
-        surface: '#F4F3EF',
-        'surface-subtle': '#EEEDE8',
+        surface: '#E6EFD9',
+        'surface-subtle': '#D5E2D0',
         ink: {
-          DEFAULT: '#0F172A', // deep charcoal midnight
-          light: '#334155',
-          muted: '#64748B',
-          faint: '#94A3B8',
+          DEFAULT: '#01161E',
+          light: '#124559',
+          muted: '#598392',
+          faint: '#AEC3B0',
         },
         navy: {
-          950: '#070B14',
-          900: '#0B132B',
-          800: '#1C2541',
-          700: '#2E3D66',
+          950: '#01161E',
+          900: '#0A3341',
+          800: '#124559',
+          700: '#356B7A',
         },
         accent: {
-          DEFAULT: '#1D4ED8', // restrained intellectual blue
-          hover: '#1E40AF',
-          soft: '#EFF6FF',
-          border: '#BFDBFE',
+          DEFAULT: '#124559',
+          hover: '#01161E',
+          soft: '#EFF6E0',
+          border: '#AEC3B0',
         },
         editorial: {
-          cream: '#FAF9F5',
-          warm: '#F5F2EB',
-          rule: '#E5E1D8',
-          border: '#E2DFD7',
+          cream: '#EFF6E0',
+          warm: '#E6EFD9',
+          rule: '#AEC3B0',
+          border: '#C8D8C2',
         }
       },
       fontFamily: {

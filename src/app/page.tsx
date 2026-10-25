@@ -29,7 +29,8 @@ export default function HomePage() {
     <div className="space-y-24 sm:space-y-32 pb-24">
       {/* 1. HERO SECTION: INTRODUCING GONELLA SOMA KIRAN */}
       <section className="relative pt-12 sm:pt-20 pb-16 border-b border-editorial-border/60 overflow-hidden bg-gradient-to-b from-surface/50 via-background to-background">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="scroll-graphic" aria-hidden="true"><span /><span /></div>
+        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           {/* Executive Profile Presentation */}
           <div className="flex flex-col items-center space-y-4 mb-6 animate-fade-in">
             <div className="relative w-28 h-28 sm:w-32 sm:h-32 rounded-full overflow-hidden border-4 border-white shadow-xl ring-2 ring-editorial-border/80 flex-shrink-0">

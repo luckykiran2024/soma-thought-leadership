@@ -3,6 +3,7 @@ import { Inter, Newsreader } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
+import ScrollMotion from '@/components/layout/ScrollMotion';
 import JsonLd from '@/components/seo/JsonLd';
 
 const inter = Inter({
@@ -81,6 +82,7 @@ export default function RootLayout({
         <JsonLd type="WebSite" />
       </head>
       <body className="font-sans antialiased min-h-screen flex flex-col selection:bg-navy-950 selection:text-white">
+        <ScrollMotion />
         <Navbar />
         <main className="flex-grow pt-20">
           {children}
